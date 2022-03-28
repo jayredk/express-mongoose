@@ -11,6 +11,6 @@ router.patch('/:id', updatePost)
 
 router.delete('/:id', deletePost)
 
-router.delete('/:id', deleteAllPost)
+router.delete('/', deleteAllPost)
 
 module.exports = router
