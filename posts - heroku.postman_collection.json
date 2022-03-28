@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "caa14ebc-9971-416a-a97e-015274717032",
+		"name": "posts - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[GET] - 取得貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://desolate-ravine-04524.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"desolate-ravine-04524",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] - 新增貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Gordon\",\n    \"image\": \"https://dummyimage.com/300x300.png/dddddd/000000\",\n    \"content\":\"Happy Birthday\",\n    \"likes\":666,\n    \"comments\":136,\n    \"type\":\"person\",\n    \"tags\":[\"心情\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://desolate-ravine-04524.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"desolate-ravine-04524",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[DELETE] - 刪除單一貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://desolate-ravine-04524.herokuapp.com/posts/id",
+					"protocol": "https",
+					"host": [
+						"desolate-ravine-04524",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[DELETE] - 刪除所有貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://desolate-ravine-04524.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"desolate-ravine-04524",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[PATCH] - 編輯貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"gigi\",\n    \"image\": \"https://dummyimage.com/300x300.png/dddddd/000000\",\n    \"content\":\"Happy Birthday\",\n    \"likes\":666,\n    \"comments\":136,\n    \"type\":\"person\",\n    \"tags\":[\"心情\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://desolate-ravine-04524.herokuapp.com/posts/id",
+					"protocol": "https",
+					"host": [
+						"desolate-ravine-04524",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"id"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
